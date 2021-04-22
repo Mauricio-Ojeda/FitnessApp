@@ -7,9 +7,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 const user = {
-    firstName: 'Raul',
-    lastName: 'Palacios',
-    avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png'
+    firstName: 'Mauricio',
+    lastName: 'y Valentina',
+    avatar: 'https://spaceplace.nasa.gov/review/sunburn/sunburn1.sp.png'
 }
 
 function getName(user){
@@ -24,8 +24,8 @@ function getGreeting(user){
 }
 
 const name = 'Raul'
-
-const element = (
+//JSX  nos permite usar html en js, para llamar variables o funciones lo ponemos entre {}
+const element = (//cuando vamos a escribir mucho jsx lo ponemos entre parentesis
     <div>
         <h1>{getGreeting(user)}</h1>
         <img src={user.avatar} />
@@ -33,6 +33,6 @@ const element = (
 )
 const container = document.getElementById('root')
 
-// ReactDOM.render(__QUE__, __DONDE__)
+// ReactDOM.render(__QUE__, __DONDE__) QUE queremos renderizar y DONDE lo queremos renderizar
 
 ReactDOM.render(element, container)
