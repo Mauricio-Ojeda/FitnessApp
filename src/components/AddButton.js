@@ -1,14 +1,14 @@
-import React from 'react'
-import './styles/AddButton.css'
-import buttomImg from '../images/add.png'
+import React from 'react';
+import './styles/AddButton.css';
+import AddImage from '../images/add.png'
 
-function AddButton(props){
-    return (
+function AddButton(){
+    return(
         <a href="/exercise/new">
-            <img src={buttomImg} class="Fitness-Add" />
+            <img src={AddImage} class="Fitness-Add" />
         </a>
-        
+
     )
 }
 
-export default AddButton
+export default AddButton;

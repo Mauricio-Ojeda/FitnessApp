@@ -35,7 +35,7 @@ class Exercises extends React.Component {
         return(
             <div>
                 <Welcome 
-                    username="Raúl"
+                    username="Mauircio"
                 />
                 <ExerciseList 
                     exercises={this.state.data}
